@@ -22,7 +22,7 @@ RUN addgroup -g 1000 minecraft \
   && chown minecraft:minecraft /data /config /mods /plugins /home/minecraft
 
 #Download Tekkit Legends
-RUN wget -O /tmp/tekkit.zip http://servers.technicpack.net/Technic/servers/tekkit-legends/Tekkit_Legends_Server_v1.1.1.zip
+RUN wget -O /tmp/tekkit.zip http://servers.technicpack.net/Technic/servers/tekkitmain/Tekkit_Server_v1.2.9g.zip
 RUN unzip /tmp/tekkit.zip -d /data
 RUN chmod +x /data/start.sh
 
