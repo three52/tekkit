@@ -24,10 +24,10 @@ RUN addgroup -g 1000 minecraft \
 #Download Tekkit Legends
 RUN wget -O /tmp/tekkit.zip http://servers.technicpack.net/Technic/servers/tekkitmain/Tekkit_Server_v1.2.9g.zip
 RUN unzip /tmp/tekkit.zip -d /data
-RUN chmod +x /data/start.sh
+RUN chmod +x /data/launch.sh
 
 VOLUME ["/data"]
 EXPOSE 25565
 
 WORKDIR /data
-ENTRYPOINT ["/bin/sh","/data/start.sh"]
+ENTRYPOINT ["/bin/sh","/data/launch.sh"]
